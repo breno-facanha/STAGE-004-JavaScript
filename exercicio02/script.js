@@ -32,4 +32,15 @@ function mediaNota( nota1, nota2){
     return media
 } 
 
-console.log(mediaNota (6, 8))
+
+
+for (let item = 0; students.length; item++){
+    let aprovados = mediaNota(students[item].notaPrimeiraProva, students[item].notaSegundaProva) >= 7 ? `Parabéns, ${students[item].name}! Você foi aprovado no concurso` : `Não foi dessa ves, ${students[item].name}! Tente novamente`
+alert(`
+    A média do aluno ${students[item].name} é: ${mediaNota(students[item].notaPrimeiraProva, students[item].notaSegundaProva)}
+    ${aprovados}
+    `)
+console.log(aprovados)
+}
+
+

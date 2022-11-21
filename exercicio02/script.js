@@ -27,4 +27,9 @@ const students = [
 ]
 
 
+function mediaNota( nota1, nota2){
+    media = (nota1 + nota2) / 2
+    return media
+} 
 
+console.log(mediaNota (6, 8))
